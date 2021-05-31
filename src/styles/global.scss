@@ -1,0 +1,74 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 480px,
+  md: 768px,
+  lg: 1024px
+);
+
+$container-max-widths: (
+  sm: 97%,
+  md: 97%,
+  lg: 960px,
+  xl: 1140px
+);
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "paper.scss";
+@import "animations";
+
+/* RGB */
+$color1: rgba(255, 166, 48, 1);
+$color2: rgba(219, 214, 208, 1);
+$color3: rgba(237, 230, 222, 1);
+$color4: rgba(35, 35, 34, 1);
+$color5: rgba(53, 52, 51, 1);
+
+
+body {
+    font-family: 'Oswald', sans-serif;
+    color: $color5;
+    background-color: #e0e0e0;
+}
+
+main {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 1px 2px 8px 1px rgba($color: #000000, $alpha: 0.4);
+    padding: 30px !important;
+}
+
+dl {
+    margin-bottom: 0;
+
+    dt {
+        float: left;
+        clear: left;
+        width: 30%;
+    }
+
+    dd {
+        margin-left: 30%;
+        
+        p {
+            margin-top: 5px;
+            //text-align: justify;
+            //hyphens: auto;
+        }
+    }
+}
+
+ul {
+    margin-bottom: 0;
+}
+
+header {
+    font-weight: bold;
+}
+
+article {
+    margin-bottom: 20px;
+}
